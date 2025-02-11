@@ -9,20 +9,20 @@
     padding: 30px 80px;
 }
 
-.header_logo {
+.logo {
     color: #fff;
     text-decoration: none;
     font-size: 28px;
 }
 
-.header_img {
+.img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.img{
+.btnImg{
     background-color: transparent;
     border: none;
     display: flex;
@@ -33,7 +33,7 @@
     margin-right: 20px;
 }
 
-.img:last-child {
+.btnImg:last-child {
     margin-right: 0;
 }
 
@@ -47,13 +47,10 @@
     width: 100%;
     height: 95px;
     font-size: 21px;
-}
-
-.footer_copyright {
     color: #4D4A4A;
 }
 
-.menu_list {
+.list {
     display: flex;
     flex-direction: row;
     gap: 90px;

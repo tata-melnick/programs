@@ -1,25 +1,25 @@
 import React from "react";
-import "./styles.css";
+import styles from "./styles.module.css";
 
 const Footer: React.FC = () => {
 
     return (
-        <div className="footer">
-            <div className="footer_copyright" >
+        <div className={styles.footer}>
+            <div>
                 <img  src="/public/icon.png"
                           alt="Notification"/>
                 <span>2018-2023 Платформа, все права защищены</span>
             </div>
-            <div className="footer_menu">
-                <ul className="menu_list">
-                    <li className="menu_item">
-                        <a href="#" className="item">Контактная информация</a>
+            <div>
+                <ul className={styles.list}>
+                    <li>
+                        <a href="#" className={styles.item}>Контактная информация</a>
                         </li>
-                    <li className="menu_item">
-                        <a href="#" className="item">Конфиденциальность</a>
+                    <li>
+                        <a href="#" className={styles.item}>Конфиденциальность</a>
                     </li>
-                    <li className="menu_item">
-                        <a href="#" className="item" >Пользовательское соглашение</a>
+                    <li>
+                        <a href="#" className={styles.item} >Пользовательское соглашение</a>
                     </li>
                 </ul>
             </div>
