@@ -1,0 +1,32 @@
+.menu {
+    width: 395px;
+    height: 520px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 15%), 0 -5px 25px rgba(0, 0, 0, 15%);
+    padding: 75px 55px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    list-style-type: none;
+}
+
+.item {}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+}
+
+.btn:hover {
+    color: #E52127;
+    transition: 300ms;
+}
