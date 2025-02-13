@@ -12,15 +12,9 @@ const Footer: React.FC = () => {
             </div>
             <div>
                 <ul className={styles.list}>
-                    <li>
-                        <a href="#" className={styles.item}>Контактная информация</a>
-                        </li>
-                    <li>
-                        <a href="#" className={styles.item}>Конфиденциальность</a>
-                    </li>
-                    <li>
-                        <a href="#" className={styles.item} >Пользовательское соглашение</a>
-                    </li>
+                    <li className={styles.item}>Контактная информация</li>
+                    <li className={styles.item}>Конфиденциальность</li>
+                    <li className={styles.item}>Пользовательское соглашение</li>
                 </ul>
             </div>
         </div>

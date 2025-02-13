@@ -48,6 +48,7 @@
     height: 95px;
     font-size: 21px;
     color: #4D4A4A;
+    border-top: solid 1px #00000015;
 }
 
 .list {
@@ -59,4 +60,5 @@
 .item {
     text-decoration: none;
     color: #4D4A4A;
+    font-size: 21px;
 }

@@ -1,20 +1,21 @@
 import React from "react";
 import styles from "./styles.module.css";
+import Button from "../../components/Button";
 
 const Header: React.FC = () => {
 
     return (
         <div className={styles.header}>
-            <a href="#" className={styles.logo}>ЛОГОТИП</a>
+            <div className={styles.logo}>ЛОГОТИП</div>
             <div className={styles.img}>
-                <button className={styles.btnImg}>
+                <Button className={styles.btnImg}>
                     <img  src="/public/notification.png"
                               alt="Notification"/>
-                </button>
-                <button className={styles.btnImg}>
+                </Button>
+                <Button className={styles.btnImg}>
                     <img  src="/public/unknownUser.png"
                               alt="Notification"/>
-                </button>
+                </Button>
             </div>
         </div>
     )
