@@ -1,0 +1,47 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    padding: 20px 40px 20px 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 15%), 0 -3px 10px rgba(0, 0, 0, 15%);
+    border-radius: 20px;
+    margin-bottom: 45px;
+}
+
+.card:last-child {
+    margin-bottom: 0;
+}
+
+.img {
+    width: 275px;
+    height: 175px;
+    background-color: #E2DDDD;
+    border-radius: 10px;
+}
+
+.img > img {
+    width: 275px;
+    height: 175px;
+    border-radius: 10px;
+}
+
+.description {
+    width: 400px;
+    height: 100%;
+}
+
+.title {
+    margin-bottom: 30px;
+}
+
+.deadline {
+    font-size: 21px;
+    color: #6C6969;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 25px;
+}
