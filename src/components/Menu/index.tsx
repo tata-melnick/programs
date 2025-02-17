@@ -9,13 +9,13 @@ const Menu: React.FC = () => {
             <nav>
                 <ul className={styles.list}>
                     <li className={styles.item}>
-                        <Link to="/main" className={styles.btn}>ПРОГРАММЫ</Link>
+                        <Link to="/main" className={styles.btn}>Программы</Link>
                     </li>
                     <li className={styles.item}>
-                        <Link to="#" className={styles.btn}>ПРОФИЛЬ</Link>
+                        <Link to="#" className={styles.btn}>Профиль</Link>
                     </li>
                     <li className={styles.item}>
-                        <Link to="#" className={styles.btn}>СЕРТИФИКАТЫ</Link>
+                        <Link to="#" className={styles.btn}>Сертификаты</Link>
                     </li>
                 </ul>
             </nav>

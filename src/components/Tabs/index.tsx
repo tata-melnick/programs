@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import styles from "./tabs.module.css";
 import Tab from "./Tab";
-import MainList from "../MainList";
+import MainList from "../List";
 
 enum TabList {
     All = "all",
