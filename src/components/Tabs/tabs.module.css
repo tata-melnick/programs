@@ -1,0 +1,11 @@
+.labelTab {
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.tabActive {
+    font-weight: 500;
+}
