@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./styles.module.css";
-import Button from "../../components/Button";
 
 const Header: React.FC = () => {
 
@@ -9,12 +8,16 @@ const Header: React.FC = () => {
             <div className={styles.logo}>ЛОГОТИП</div>
             <div className={styles.img}>
                 <div className={styles.btnImg}>
-                    <img  src="/public/notification.png"
-                              alt="Notification"/>
+                    <img
+                        src="/public/notification.png"
+                        alt="Notification"
+                    />
                 </div>
                 <div className={styles.btnImg}>
-                    <img  src="/public/unknownUser.png"
-                              alt="Notification"/>
+                    <img
+                        src="/public/unknownUser.png"
+                        alt="Notification"
+                    />
                 </div>
             </div>
         </div>

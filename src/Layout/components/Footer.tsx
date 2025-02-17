@@ -6,8 +6,10 @@ const Footer: React.FC = () => {
     return (
         <div className={styles.footer}>
             <div>
-                <img  src="/public/icon.png"
-                          alt="Notification"/>
+                <img
+                    src="/public/icon.png"
+                    alt="Notification"
+                />
                 <span>2018-2023 Платформа, все права защищены</span>
             </div>
             <div>
