@@ -1,0 +1,37 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 21px;
+}
+
+.btnFilled {
+    background-color: #148c88;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    width: 245px;
+    height: 65px;
+}
+
+.btnFilled:hover {
+    background-color: #1cc7c1;
+    transition: 300ms;
+}
+
+.btnOutline {
+    background-color: #fff;
+    color: #148c88;
+    border-radius: 10px;
+    border: 2px solid #148c88;
+    width: 245px;
+    height: 65px;
+}
+
+.btnOutline:hover {
+    color: #1cc7c1;
+    transition: 300ms;
+    border: 2px solid #1cc7c1;
+}
