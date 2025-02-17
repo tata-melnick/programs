@@ -1,7 +1,3 @@
-.content{
-    width: 100%;
-}
-
 .section {
     display: flex;
     flex-direction: row;
@@ -17,6 +13,11 @@
 .btnSection:hover {
     font-weight: 600;
     color: #000000;
+}
+
+.noPrograms {
+    font-size: 32px;
+    color: #888888;
 }
 
 .programs {
