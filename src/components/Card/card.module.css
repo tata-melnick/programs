@@ -3,7 +3,9 @@
     flex-direction: row;
     gap: 35px;
     padding: 20px 40px 20px 25px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 15%), 0 -3px 10px rgba(0, 0, 0, 15%);
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 15%),
+        0 -3px 10px rgba(0, 0, 0, 15%);
     border-radius: 20px;
     margin-bottom: 45px;
 }
@@ -15,7 +17,7 @@
 .img {
     width: 275px;
     height: 175px;
-    background-color: #E2DDDD;
+    background-color: #e2dddd;
     border-radius: 10px;
 }
 
@@ -36,12 +38,14 @@
 
 .deadline {
     font-size: 21px;
-    color: #6C6969;
+    color: #6c6969;
 }
 
 .btn {
+    width: 515px;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     align-items: flex-end;
     gap: 25px;
 }

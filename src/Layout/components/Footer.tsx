@@ -1,15 +1,11 @@
-import React from "react";
-import styles from "./styles.module.css";
+import React from "react"
+import styles from "./styles.module.css"
 
 const Footer: React.FC = () => {
-
     return (
         <div className={styles.footer}>
             <div>
-                <img
-                    src="/public/icon.png"
-                    alt="Notification"
-                />
+                <img src="/public/icon.png" alt="Notification" />
                 <span>2018-2023 Платформа, все права защищены</span>
             </div>
             <div>
@@ -23,4 +19,4 @@ const Footer: React.FC = () => {
     )
 }
 
-export default Footer;
+export default Footer
