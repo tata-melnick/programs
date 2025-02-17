@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./card.module.css";
 import Button from "../Button";
-import {CardProgram} from "../../types";
+import {ProgramType} from "../../types";
 
 interface ICardProps {
-    detail: CardProgram;
+    detail: ProgramType;
 }
 
 const Card: React.FC<ICardProps> = ({detail}) => {
@@ -13,7 +13,7 @@ const Card: React.FC<ICardProps> = ({detail}) => {
     return (
         <div className={styles.card}>
             <div className={styles.img}>
-                <img src={pictures} alt="Нет картинки"/>
+                <img src={pictures} alt=""/>
             </div>
             <div className={styles.description}>
                 <h2 className={styles.title}>{title}</h2>
