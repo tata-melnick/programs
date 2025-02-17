@@ -1,7 +1,8 @@
-import React, {useState} from "react";
-import styles from "./tabs.module.css";
-import Tab from "./Tab";
-import MainList from "../List";
+import React, { useContext, useState } from "react"
+import styles from "./tabs.module.css"
+import Tab from "./Tab"
+import List from "../List"
+import { ListCardsContext } from "../../context"
 
 enum TabList {
     All = "all",
@@ -9,28 +10,35 @@ enum TabList {
 }
 
 const Tabs: React.FC = () => {
-    const [activeTab, setActiveTab] = useState(TabList.All);
+    const [activeTab, setActiveTab] = useState(TabList.All)
+    const { list, myList } = useContext(ListCardsContext)
 
-    const list = {
-        [TabList.All]: { label: "Все программы", content: <MainList/>},
-        [TabList.My]: { label: "Мои программы", content: <div>my</div>},
+    const listProgram = {
+        [TabList.All]: {
+            label: "Все программы",
+            content: <List list={list} />,
+        },
+        [TabList.My]: {
+            label: "Мои программы",
+            content: <List isMy list={myList} />,
+        },
     }
 
     return (
         <>
             <div className={styles.labelTab}>
-                {Object.keys(list).map((tab: TabList) => (
+                {Object.keys(listProgram).map((tab: TabList) => (
                     <Tab
-                        label={list[tab].label}
+                        label={listProgram[tab].label}
                         key={tab}
                         onClick={() => setActiveTab(tab)}
                         active={tab === activeTab}
                     />
                 ))}
             </div>
-            {list[activeTab].content}
+            {listProgram[activeTab].content}
         </>
     )
 }
 
-export default Tabs;
+export default Tabs

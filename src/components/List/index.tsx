@@ -1,20 +1,30 @@
-import React, {useContext} from "react";
-import styles from "./list.module.css";
-import Card from "../Card";
-import {ListCardsContext} from "../../context";
+import React from "react"
+import styles from "./list.module.css"
+import Card from "../Card"
+import { ProgramList } from "../../types"
 
-const MainList: React.FC = () => {
-    const {list} = useContext(ListCardsContext);
+interface IListProps {
+    isMy: boolean
+    list: ProgramList
+}
 
+const List: React.FC<IListProps> = ({ isMy, list }) => {
     return (
-        <div className={styles.content}>
-            <div className={styles.programs}>
-                {list.map((item)=>(
-                    <Card detail={item} key={item.id}/>
-                ))}
-            </div>
+        <div className={styles.programs}>
+            {list.length === 0 ? (
+                <div className={styles.noPrograms}>Нет активных программ</div>
+            ) : (
+                list.map((item) => (
+                    <Card
+                        detail={item}
+                        key={item.id}
+                        isMy={isMy}
+                        listProgram={list}
+                    />
+                ))
+            )}
         </div>
     )
 }
 
-export default MainList;
+export default List
