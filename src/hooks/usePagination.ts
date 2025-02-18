@@ -7,7 +7,7 @@ interface IUsePaginationProps {
     currentPage: number
 }
 
-export const DOTS = ". . ."
+export const DOTS = "..."
 
 const range = (start, end) => {
     const length = end - start + 1
