@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react"
-import styles from "./tabs.module.css"
-import Tab from "./Tab"
+import styles from "./programs.module.css"
+import Tab from "../Tab"
 import List from "../List"
 import { ListCardsContext } from "../../context"
 
@@ -9,7 +9,7 @@ enum TabList {
     My = "my",
 }
 
-const Tabs: React.FC = () => {
+const Programs: React.FC = () => {
     const [activeTab, setActiveTab] = useState(TabList.All)
     const { list, myList } = useContext(ListCardsContext)
 
@@ -41,4 +41,4 @@ const Tabs: React.FC = () => {
     )
 }
 
-export default Tabs
+export default Programs
