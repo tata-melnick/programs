@@ -1,8 +1,8 @@
 import React from "react"
+import { Outlet } from "react-router-dom"
 import styles from "./layout.module.css"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
-import Tabs from "../components/Tabs"
 import Menu from "../components/Menu"
 
 const Layout: React.FC = () => {
@@ -13,7 +13,7 @@ const Layout: React.FC = () => {
                 <Menu />
                 <div className={styles.content}>
                     <h1 className={styles.title}>Иванов Иван</h1>
-                    <Tabs />
+                    <Outlet />
                 </div>
             </div>
             <Footer />
