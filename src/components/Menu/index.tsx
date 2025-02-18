@@ -8,17 +8,17 @@ const Menu: React.FC = () => {
             <nav>
                 <ul className={styles.list}>
                     <li className={styles.item}>
-                        <Link to="/main" className={styles.btn}>
+                        <Link to="/" className={styles.btn}>
                             Программы
                         </Link>
                     </li>
                     <li className={styles.item}>
-                        <Link to="#" className={styles.btn}>
+                        <Link to="/profile" className={styles.btn}>
                             Профиль
                         </Link>
                     </li>
                     <li className={styles.item}>
-                        <Link to="#" className={styles.btn}>
+                        <Link to="/certificate" className={styles.btn}>
                             Сертификаты
                         </Link>
                     </li>

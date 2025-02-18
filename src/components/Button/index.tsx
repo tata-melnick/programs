@@ -1,5 +1,5 @@
 import React from "react"
-import cn from "classnames"
+import cn from "classnames-ts"
 import styles from "./button.module.css"
 
 interface IButtonProps {
