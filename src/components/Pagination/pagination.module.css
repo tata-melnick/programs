@@ -23,11 +23,11 @@
     align-items: center;
     font-size: 21px;
     min-width: max-content;
+    transition: 300ms;
 }
 
 .item:hover {
     font-weight: 600;
-    transition: 300ms;
 }
 
 .paginationItemSelected {
@@ -36,4 +36,8 @@
 
 .paginationItemDots {
     cursor: default;
+}
+
+.paginationItemDots:hover {
+    font-weight: 400;
 }

@@ -21,18 +21,21 @@ const Card: React.FC<ICardProps> = ({ detail, isMy }) => {
                 <h2 className={styles.title}>{title}</h2>
                 <div className={styles.deadline}>{deadline}</div>
             </div>
-            {isMy ? (
-                <div className={styles.btn}>
+            <div className={styles.btn}>
+                {isMy ? (
                     <Button type="filled">Смотреть</Button>
-                </div>
-            ) : (
-                <div className={styles.btn}>
-                    <Button type="outline">Подробнее</Button>
-                    <Button type="filled" onClick={() => addMyProgram(detail)}>
-                        Пройти
-                    </Button>
-                </div>
-            )}
+                ) : (
+                    <>
+                        <Button type="outline">Подробнее</Button>
+                        <Button
+                            type="filled"
+                            onClick={() => addMyProgram(detail)}
+                        >
+                            Пройти
+                        </Button>
+                    </>
+                )}
+            </div>
         </div>
     )
 }

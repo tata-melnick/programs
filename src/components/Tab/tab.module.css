@@ -4,3 +4,7 @@
     width: 260px;
     font-size: 28px;
 }
+
+.active {
+    font-weight: 500;
+}

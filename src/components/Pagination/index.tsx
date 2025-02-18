@@ -34,28 +34,19 @@ const Pagination: React.FC<IPaginationProps> = ({
     return (
         <div className={styles.container}>
             <ul className={cn(styles.list, className)}>
-                {paginationRange.map((el, i) =>
-                    el === DOTS ? (
-                        <li
-                            className={styles.paginationItemDots}
-                            key={`dot-${i}`}
-                        >
-                            &#8230;
-                        </li>
-                    ) : (
-                        <li
-                            className={cn(
-                                styles.item,
-                                el === currentPage &&
-                                    styles.paginationItemSelected
-                            )}
-                            onClick={() => onPageChange(el)}
-                            key={`page-${el}`}
-                        >
-                            {el}
-                        </li>
-                    )
-                )}
+                {paginationRange.map((el, i) => (
+                    <li
+                        className={cn(
+                            styles.item,
+                            el === currentPage && styles.paginationItemSelected,
+                            el === DOTS && styles.paginationItemDots
+                        )}
+                        onClick={el !== DOTS ? () => onPageChange(el) : undefined}
+                        key={`page-${el}-${i}`}
+                    >
+                        {el}
+                    </li>
+                ))}
             </ul>
         </div>
     )

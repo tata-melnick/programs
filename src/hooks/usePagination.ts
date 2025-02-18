@@ -54,15 +54,11 @@ const usePagination: React.FC<IUsePaginationProps> = ({
             return [firstPageIndex, DOTS, ...rightRange]
         }
 
-        console.log({ rightSiblingIndex, totalPageCount, shouldShowRightDots })
         if (shouldShowLeftDots && shouldShowRightDots) {
             const middleRange = range(leftSiblingIndex, rightSiblingIndex)
-            if (currentPage === 2) {
+            if (currentPage === 2 || currentPage === 3) {
                 return [firstPageIndex, ...middleRange, DOTS, lastPageIndex]
-            } else if (currentPage === 3) {
-                return [firstPageIndex, ...middleRange, DOTS, lastPageIndex]
-            }
-            if (totalPageCount - 2 === currentPage) {
+            } else if (totalPageCount - 2 === currentPage) {
                 return [firstPageIndex, DOTS, ...middleRange, lastPageIndex]
             } else {
                 return [

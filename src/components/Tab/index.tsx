@@ -1,4 +1,5 @@
 import React from "react"
+import cn from "classnames-ts"
 import styles from "./tab.module.css"
 
 type TabProps = {
@@ -8,14 +9,8 @@ type TabProps = {
 }
 
 const Tab: React.FC<TabProps> = ({ label, onClick, active }) => {
-    const activeStyle = active
-        ? {
-              fontWeight: "500",
-          }
-        : {}
-
     return (
-        <div className={styles.tab} onClick={onClick} style={activeStyle}>
+        <div className={cn(styles.tab, active && styles.active)} onClick={onClick}>
             {label}
         </div>
     )

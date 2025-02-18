@@ -10,7 +10,7 @@ const Header: React.FC = () => {
                     <img src="/public/notification.png" alt="Notification" />
                 </div>
                 <div className={styles.btnImg}>
-                    <img src="/public/unknownUser.png" alt="Notification" />
+                    <img src="/public/unknownUser.png" alt="User" />
                 </div>
             </div>
         </div>
