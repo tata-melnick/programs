@@ -22,7 +22,7 @@ const List: React.FC<IListProps> = ({ isMy, list }) => {
 
     useEffect(() => {
         setPage(1)
-    }, [list])
+    }, [isMy])
 
     return (
         <>

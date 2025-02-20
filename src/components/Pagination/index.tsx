@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect} from "react"
 import cn from "classnames-ts"
 import usePagination, { DOTS } from "../../hooks/usePagination"
 import styles from "./pagination.module.css"
@@ -26,6 +26,11 @@ const Pagination: React.FC<IPaginationProps> = ({
         siblingCount,
         pageSize,
     })
+
+    useEffect(()=> {
+        const totalPageCount = Math.ceil(totalCount / pageSize)
+    if (totalPageCount && currentPage > totalPageCount) onPageChange(totalPageCount)
+    }, [totalCount])
 
     if (currentPage === 0 || paginationRange.length < 2) {
         return null

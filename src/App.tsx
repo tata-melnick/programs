@@ -10,7 +10,10 @@ const App: React.FC = () => {
     const [list, setList] = useState<ProgramList>(PROGRAMS)
     const [myList, setMyList] = useState<ProgramList>([])
 
-    const addMyProgram = (p: ProgramType) => setMyList((prev) => [...prev, p])
+    const addMyProgram = (program: ProgramType) => {
+        setMyList((prev) => [...prev, program])
+        setList(list.filter(({ id }) => id !== program.id))
+    }
 
     return (
         <ListCardsContext.Provider
